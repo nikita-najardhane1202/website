@@ -72,8 +72,33 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Daily Logs — Built for clarity.</p>
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h4 class="footer-title">Daily Logs</h4>
+        <p class="muted">Short daily posts focused on progress and clarity.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-subscribe">
+        <h5>Subscribe</h5>
+        <form class="subscribe-form footer-subscribe-form">
+          <label for="femail" class="sr-only">Email</label>
+          <input id="femail" type="email" placeholder="you@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="muted">© 2026 Daily Logs — Built for clarity.</p>
     </div>
   </footer>
 </body>

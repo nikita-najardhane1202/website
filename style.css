@@ -63,6 +63,28 @@ body{
 
 .site-footer{padding:28px 0;color:var(--muted);font-size:13px}
 
+/* Footer layout */
+.footer-grid{display:grid;grid-template-columns:1fr 160px 260px;gap:20px;align-items:start;padding-top:8px;padding-bottom:18px}
+.footer-title{margin:0;font-size:18px}
+.footer-nav h5,.footer-subscribe h5{margin:0 0 10px;font-size:14px}
+.footer-nav ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.footer-nav a{color:var(--muted);text-decoration:none}
+.footer-nav a:hover{color:var(--accent-2)}
+.footer-subscribe-form{display:flex;gap:8px}
+.footer-subscribe-form input{padding:10px;border-radius:8px;border:1px solid rgba(15,23,42,0.06)}
+.footer-subscribe-form button{padding:10px 12px;border-radius:8px;background:var(--accent-2);color:#fff;border:none}
+.footer-bottom{border-top:1px solid rgba(15,23,42,0.03);padding-top:14px;display:flex;justify-content:space-between;align-items:center}
+
+@media (max-width:900px){
+  .footer-grid{grid-template-columns:1fr;gap:12px}
+  .footer-subscribe-form{flex-direction:row}
+}
+
+@media (max-width:480px){
+  .footer-subscribe-form{flex-direction:column}
+  .footer-subscribe-form input{width:100%}
+}
+
 @media (max-width:900px){
   .layout{grid-template-columns:1fr;}
   .container{padding:20px}
